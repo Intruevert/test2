@@ -1,1 +1,364 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #1e88e5;
+    margin-top: 0;
+}
+
+.lead {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button.primary {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #1565c0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e3f2fd;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #0d47a1;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit-item i {
+    font-size: 2em;
+    color: #43a047;
+    margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+    color: #43a047;
+    margin-bottom: 10px;
+}
+
+/* Ingredients Section */
+.ingredients {
+    padding: 60px 0;
+    background-color: #f9fbe7;
+}
+
+.ingredients h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.ingredient-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ingredient-item h3 {
+    color: #7cb342;
+    margin-bottom: 5px;
+}
+
+.ingredient-icon {
+    font-size: 2em;
+    color: #7cb342;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-item span {
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+/* CTA Secondary Section */
+.cta-secondary {
+    background-color: #e3f2fd;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-secondary h2 {
+    margin-bottom: 15px;
+}
+
+/* Guarantee Section */
+.guarantee {
+    padding: 60px 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.guarantee-content, .special-offer {
+    padding: 20px;
+    max-width: 45%;
+}
+
+.guarantee i, .special-offer i {
+    color: #43a047;
+    margin-bottom: 15px;
+}
+
+.guarantee h2, .special-offer h2 {
+    color: #43a047;
+}
+
+/* Order Section */
+.order {
+    padding: 60px 0;
+    background-color: #f9fbe7;
+    text-align: center;
+}
+
+.order h2 {
+    margin-bottom: 20px;
+}
+
+.order-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.order-form button[type="submit"] {
+    padding: 15px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form button[type="submit"]:hover {
+    background-color: #1565c0;
+}
+
+.payment-info {
+    margin-top: 15px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.payment-info i {
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #1e88e5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .ingredients-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guarantee {
+        flex-direction: column;
+    }
+
+    .guarantee-content, .special-offer {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul {
+        margin-top: 15px;
+    }
+
+    footer ul li {
+        margin: 0 10px;
+    }
+}
